@@ -1,3 +1,46 @@
 body {
   background-color: #84cead;
+  padding: 30px;
+}
+
+h2 {
+  font-family: sans-serif;
+  font-size: 24px;
+  color: darkblue;
+}
+
+a {
+  padding: 10px 0;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+  font-size: 20px;
+  color: darkblue;
+  background-color: rgb(189, 118, 32);
+  text-decoration: none;
+}
+
+/* .section {
+  & h2 {
+    margin-bottom: 10px;
+  }
+} */
+
+h2 {
+  margin-bottom: 10px;
+}
+
+ul {
+  font-family: sans-serif;
+  font-size: 16px;
+  color: darkblue;
+  padding-left: 30px;
+
+  li {
+    :not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
 }
