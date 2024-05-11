@@ -1,5 +1,6 @@
 const { src, dest, series, watch } = require("gulp");
 // const sass = require('gulp-sass')(require('sass'))
+const postcss = require("gulp-postcss");
 const csso = require("gulp-csso");
 const concat = require("gulp-concat");
 const autoprefixer = require("gulp-autoprefixer");
@@ -48,6 +49,7 @@ function css() {
         })
       )
       .pipe(csso())
+      .pipe(postcss())
       .pipe(concat("index.css"))
       .pipe(removeComments())
       .pipe(dest("dist"))
