@@ -1,8 +1,7 @@
 const { src, dest, series, watch } = require("gulp");
 // const sass = require('gulp-sass')(require('sass'))
-const postcss = require("gulp-postcss");
 const csso = require("gulp-csso");
-const concat = require("gulp-concat");
+("gulp-concat-css");
 const autoprefixer = require("gulp-autoprefixer");
 // const include = require('gulp-file-include')
 const htmlmin = require("gulp-htmlmin");
@@ -49,10 +48,8 @@ function css() {
         })
       )
       .pipe(csso())
-      .pipe(postcss())
-      .pipe(concat("index.css"))
       .pipe(removeComments())
-      .pipe(dest("dist"))
+      .pipe(dest("dist/css"))
       .pipe(sync.reload({ stream: true }))
   );
 }
