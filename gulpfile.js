@@ -125,5 +125,5 @@ function serve() {
   // watch("src/js/s**.js", series(js)).on("change", sync.reload);
 }
 exports.build = series(del, images, media, font, css, html);
-exports.serve = series(del, images, media, font, css, html, serve);
+exports.serve = series(del, images, media, font, html, css, serve);
 // exports.clear = del
