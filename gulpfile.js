@@ -83,7 +83,7 @@ function del() {
 function images() {
   return (
     src(
-      "src/images/**/*.{jpg,png,jpeg,webp,gif}"
+      "src/media/**/*.{jpg,png,jpeg,webp,gif}"
       // '!src/images/icon/*'
     )
       // .pipe(
@@ -104,7 +104,7 @@ function images() {
           optimizationLevel: 3, //0 to7
         })
       )
-      .pipe(dest("dist/images"))
+      .pipe(dest("dist/media"))
   );
 }
 
