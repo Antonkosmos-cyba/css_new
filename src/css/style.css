@@ -17,16 +17,18 @@
   height: 100vh;
 }
 
-/* .box {
-  width: 100%;
+.box {
+  margin: 20px auto;
+  width: 80%;
   aspect-ratio: 16/9;
-  background-color: var(--gray);
-} */
 
-/* img {
+}
+
+img {
+  object-fit: cover;
   width: 100%;
-  aspect-ratio: 16/9;
-} */
+  height: 100%;
+}
 
 .main,
 .section {
