@@ -108,9 +108,9 @@ function images() {
   );
 }
 
-// function media() {
-//   return src("src/media/**").pipe(dest("dist/media"));
-// }
+function media() {
+  return src("src/media/**").pipe(dest("dist/media"));
+}
 
 // function font() {
 //   return src("src/fonts/**").pipe(dest("dist/fonts"));
@@ -124,6 +124,6 @@ function serve() {
   watch("src/css/**.css", series(css)).on("change", sync.reload);
   // watch("src/js/s**.js", series(js)).on("change", sync.reload);
 }
-exports.build = series(del, images, css, html);
-exports.serve = series(del, images, html, css, serve);
+exports.build = series(del, images, media, css, html);
+exports.serve = series(del, images, media, html, css, serve);
 // exports.clear = del
