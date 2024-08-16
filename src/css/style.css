@@ -26,11 +26,11 @@
 
 }
 
-/* img {
+img {
   object-fit: cover;
   width: 100%;
   height: 100%;
-} */
+}
 
 video {
   object-fit: cover;
@@ -47,7 +47,7 @@ video {
   flex-direction: row;
   font-size: 4.5rem;
   overflow-y: scroll;
-  scroll-snap-type: x mandatory;
+  scroll-snap-type: y mandatory;
 }
 
 .grid::-webkit-scrollbar {
@@ -65,13 +65,14 @@ video {
   scroll-snap-align: start;
 }
 
-.a {
+/* .a {
   background-color: var(--green);
-}
+} */
 
+/* 
 .b {
   background-color: var(--greene);
-}
+} */
 
 .main,
 .section {
