@@ -2,6 +2,8 @@
   --red: #e25a5a;
   --gray: #4b4848;
   --jellow: #c8d333;
+  --green: #0cd82b;
+  --greene: #0cf72b;
 }
 
 * {
@@ -13,13 +15,13 @@
 .container {
   background-color: var(--jellow);
   padding: 20px;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 }
 
 .box {
   margin: 20px auto;
-  width: 80%;
+  width: 50%;
   aspect-ratio: 16/9;
 
 }
@@ -36,7 +38,40 @@ video {
   height: 100%;
 }
 
-.grid {}
+.grid {
+  width: 600px;
+  height: 500px;
+  border: 3px solid var(--gray);
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row;
+  font-size: 4.5rem;
+  overflow-y: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.grid::-webkit-scrollbar {
+  display: none;
+}
+
+.grid>div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+
+.a {
+  background-color: var(--green);
+}
+
+.b {
+  background-color: var(--greene);
+}
 
 .main,
 .section {
