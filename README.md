@@ -56,3 +56,7 @@ height: 500px;
 
 scroll-snap-align: start;
 }
+
+для горизонтальной прокрутки используется flex
+
+12.54
