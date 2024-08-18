@@ -41,16 +41,18 @@ height: 500px;
 
     <!--*добавляет вертикальный скролл  -->
 
-overflow-y: scroll;
+overflow: scroll;
+overflow-y: hidden;
 
   <!--* "покадровое" переключение -->
 
-scroll-snap-type: y mandatory;
+scroll-snap-type: x mandatory;
 }
 
 .grid>div {
 width: 100%;
 height: 500px;
+flex-shrink: 0;
 
   <!--* "покадр" перек. - привязка к старту-->
 
