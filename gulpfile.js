@@ -1,6 +1,6 @@
 const { src, dest, series, watch } = require("gulp");
 // const sass = require('gulp-sass')(require('sass'))
-const csso = require("gulp-csso");
+const cssmin = require("gulp-cssmin");
 ("gulp-concat-css");
 const autoprefixer = require("gulp-autoprefixer");
 // const include = require('gulp-file-include')
@@ -47,7 +47,7 @@ function css() {
           overrideBrowserslist: ["last 2 versions"],
         })
       )
-      .pipe(csso())
+      // .pipe(cssmin())
       .pipe(removeComments())
       .pipe(dest("dist/css"))
       .pipe(sync.reload({ stream: true }))

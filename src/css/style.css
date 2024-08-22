@@ -114,19 +114,18 @@ a {
   }
 } */
 
-
 /** ВЛОЖЕНИЕ  */
 
-ul {
+.section {
   font-family: sans-serif;
-  font-size: 16px;
-  color: darkblue;
+  font-size: 26px;
+  color: var(--gray);
   padding-left: 30px;
 
-  li {
-    :not(:last-child) {
-      margin-bottom: 10px;
-    }
+  & li {
+
+    font-size: 16px;
+    color: var(--green);
   }
 
 }
