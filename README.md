@@ -29,7 +29,7 @@ height: 100%;
 
 font-size: clamp(1.5rem, calc(0.91rem + 2.93vw), 3rem);
 
-Меняется адаптивно от ширены экрана https://www.marcbacon.com/tools/clamp-calculator/
+Меняется адаптивно от ширены экрана https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjUwMHB4IiwibWF4V2lkdGgiOiI5MDBweCIsIm1pbkZvbnRTaXplIjoiMTZweCIsIm1heEZvbnRTaXplIjoiNDhweCJ9
 
 <!--? СКРОЛЫ -->
 
